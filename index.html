@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-grid"></div>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <div class="container">
+        <div class="card">
+
+            <div class="card-header">
+                <div class="logo">
+                    <span class="logo-icon">✦</span>
+                    <span class="logo-text">MAHIUDDIN</span>
+                </div>
+                <h1 class="title">Create Account</h1>
+                <p class="subtitle">Join us today — it's Lab Assignment</p>
+            </div>
+
+            <form class="form" action="#" method="POST">
+
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">
+                            <img src="icons/person.svg" alt="person icon">
+                        </span>
+                        <input type="text" id="fullname" name="fullname" placeholder="আপনার পুরো নাম লিখুন" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">
+                            <img src="icons/username.svg" alt="username icon">
+                        </span>
+                        <input type="text" id="username" name="username" placeholder="ইউজারনেম বেছে নিন" required>
+                        <span class="input-tag">@</span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <span class="input-icon">
+                            <img src="icons/email.svg" alt="email icon">
+                        </span>
+                        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <div class="input-wrapper">
+                        <span class="country-code">+880</span>
+                        <input type="tel" id="phone" name="phone" 
+                        placeholder="01XXXXXXXXX" required style="padding-left: 3.8rem;" 
+                        pattern="[0-9]*" inputmode="numeric" 
+                        oninput="this.value=this.value.replace(/[^0-9]/g,'')">
+                    </div>
+                    
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">
+                                <img src="icons/lock.svg" alt="lock icon">
+                            </span>
+                            <input type="password" id="password" name="password" placeholder="••••••••" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password">Confirm Password</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">
+                                <img src="icons/shield.svg" alt="shield icon">
+                            </span>
+                            <input type="password" id="confirm-password" name="confirm-password" placeholder="••••••••" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span class="checkmark"></span>
+                        <span class="checkbox-text">I agree to the <a href="#">Terms & Conditions</a> and <a href="#">Privacy Policy</a></span>
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    <span>Create Account</span>
+                
+                </button>
+
+                <div class="divider">
+                    <span>or continue with</span>
+                </div>
+
+                <button type="button" class="btn-google">
+                    <img src="icons/google.svg" alt="google icon">
+                    <span>Continue with Google</span>
+                </button>
+
+            </form>
+
+            <p class="login-link">Already have an account? <a href="#">Sign in</a></p>
+
+        </div>
+    </div>
+
+</body>
+</html>
